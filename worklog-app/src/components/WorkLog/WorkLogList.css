@@ -1,0 +1,279 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Dashboard Container */
+  .dashboard-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Top Section (Sidebar + Calendar) */
+  .top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  /* Sidebar (Task Form) */
+  .sidebar {
+    flex: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .sidebar h3 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .task-form input,
+  .task-form textarea,
+  .task-form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .task-form input:focus,
+  .task-form textarea:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .task-form textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .task-form button {
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .task-form button:hover {
+    background: #2980b9;
+  }
+  
+  /* Calendar Section */
+  .calendar-container {
+    flex: 2;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .calendar-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+  
+  /* Task Table */
+  .task-table-container {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-table-container h2 {
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .task-table th, .task-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-table th {
+    background: #3498db;
+    color: white;
+  }
+  
+  .task-table tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  
+  .task-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Status Styles */
+  .status-pending {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .status-in-progress {
+    color: #f1c40f;
+    font-weight: bold;
+  }
+  
+  .status-completed {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  /* Error Message */
+  .error {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    .top {
+      flex-direction: column;
+    }
+  }
+  
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 30%;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+  }
+  
+  .task-form input,
+  .task-form textarea,
+  .task-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+  }
+  
+  .task-table-container {
+    margin-top: 20px;
+  }
+  
+  .task-table th, .task-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .filters input,
+  .filters select {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .filters input:focus,
+  .filters select:focus {
+    border-color: #007bff;
+  }
+  
+  .filters select {
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  .filters input::placeholder {
+    color: #999;
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .filters input,
+    .filters select {
+      width: 100%;
+    }
+  }
+
+  .export-buttons {
+    margin: 20px 0;
+  }
+  
+  .export-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .export-btn:hover {
+    background-color: #218838;
+  }
+  
